@@ -30,8 +30,7 @@ Bot Owner Only
 ABOUT = """
 ➥ Name :  Auto Filter V3
     
-➥ Creator : [DHANUSH](
-@Dhanush_ps)
+➥ Creator : [DHANUSH](@Dhanush_ps)
 
 ➥ Language : Python3
 
