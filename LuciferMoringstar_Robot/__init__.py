@@ -28,7 +28,7 @@ Bot Owner Only
 """
 
 ABOUT = """
-➥ Name :  Auto Filter V3
+➥ Name :  [ꜱᴜᴋᴜᴍᴀʀᴀ ᴋᴜʀᴜᴩ](https://t.me/Kurup_BMbot)
     
 ➥ Creator : [DHANUSH](https://t.me/Dhanush_ps)
 
