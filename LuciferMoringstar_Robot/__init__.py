@@ -30,7 +30,7 @@ Bot Owner Only
 ABOUT = """
 ➥ Name :  [ꜱᴜᴋᴜᴍᴀʀᴀ ᴋᴜʀᴜᴩ](https://t.me/Kurup_BMbot)
     
-➥ Creator : [DHANUSH](https://t.me/Dhanush_ps)
+➥ Creator : [DHANUSH](https://t.me/bio_dhanush)
 
 ➥ Language : Python3
 
