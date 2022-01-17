@@ -7,6 +7,7 @@ from pyrogram.errors import UserNotParticipant
 from LuciferMoringstar_Robot import get_filter_results, get_file_details, is_subscribed, get_poster
 from LuciferMoringstar_Robot import RATING, GENRES, HELP, ABOUT
 import random
+import asyncio
 BUTTONS = {}
 BOT = {}
 
@@ -85,10 +86,16 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                creatorbeatz = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(18000)
+                await creatorbeatz.delete()
+                await message.delete()
 
             else:
-                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                jjkb = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(18000)
+                await jjkb.delete()
+                await message.delete()
             return
 
         data = BUTTONS[keyword]
