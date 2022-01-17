@@ -86,16 +86,12 @@ async def filter(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-                creatorbeatz = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(18000)
-                await creatorbeatz.delete()
-                await message.delete()
+                await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                
 
             else:
-                jjkb = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(18000)
-                await jjkb.delete()
-                await message.delete()
+                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                
             return
 
         data = BUTTONS[keyword]
@@ -111,15 +107,11 @@ async def filter(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            jojis = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(18000)
-            await jojis.delete()
-            await message.delete()
+            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            
         else:
-            jisjo = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(18000)
-            await jisjo.delete()
-            await message.delete()
+            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            
 
 @Client.on_message(filters.text & filters.group & filters.incoming & filters.chat(AUTH_GROUPS) if AUTH_GROUPS else filters.text & filters.group & filters.incoming)
 async def group(client, message):
