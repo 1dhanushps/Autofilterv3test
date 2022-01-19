@@ -156,12 +156,12 @@ async def group(client, message):
                 poster=await get_poster(search)
             if poster:
                hehe = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-               await asyncio.sleep(18000)
+               await asyncio.sleep(3600)
                await hehe.delete()
                await message.delete()
             else:
                 hmm = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(18000)
+                await asyncio.sleep(3600)
                 await hmm.delete()
                 await message.delete()
             return
@@ -180,12 +180,12 @@ async def group(client, message):
             poster=await get_poster(search)
         if poster:
             joelkb = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(18000)
+            await asyncio.sleep(3600)
             await joelkb.delete()
             await message.delete()
         else:
             joel = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(18000)
+            await asyncio.sleep(3600)
             await joel.delete()
             await message.delete()
 
