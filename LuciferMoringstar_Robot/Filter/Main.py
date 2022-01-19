@@ -155,15 +155,11 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-               hehe = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-               await asyncio.sleep(3600)
-               await hehe.delete()
-               await message.delete()
+               await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+               
             else:
-                hmm = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-                await asyncio.sleep(3600)
-                await hmm.delete()
-                await message.delete()
+                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                
             return
 
         data = BUTTONS[keyword]
@@ -179,16 +175,11 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            joelkb = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(3600)
-            await joelkb.delete()
-            await message.delete()
+            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            
         else:
-            joel = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-            await asyncio.sleep(3600)
-            await joel.delete()
-            await message.delete()
-
+            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            
     
 def get_size(size):
     """Get size in readable format"""
