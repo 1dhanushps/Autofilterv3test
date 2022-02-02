@@ -32,7 +32,7 @@ ABOUT = """
     
 ➥ Creator : [DHANUSH](https://t.me/bio_dhanush)
 
-➥ Language : Python3
+➥ Youtube : [B.M Movie Cuts](https://youtube.com/channel/UC09fUwaptrDL-sz_8OUeegw)
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
