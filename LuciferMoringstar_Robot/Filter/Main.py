@@ -155,11 +155,17 @@ async def group(client, message):
             if API_KEY:
                 poster=await get_poster(search)
             if poster:
-               await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+               JoelTGX = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+               await asyncio.sleep(900)
+               await JoelTGX.delete()
+               await message.delete()
                
             else:
-                await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
-                
+                JoelKB = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+                await asyncio.sleep(900)
+                await JoelKB.delete()
+                await message.delete()
+
             return
 
         data = BUTTONS[keyword]
@@ -175,10 +181,16 @@ async def group(client, message):
         if API_KEY:
             poster=await get_poster(search)
         if poster:
-            await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            SKurup = await message.reply_photo(photo=poster, caption=mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(900)
+            await SKurup.delete()
+            await message.delete()
             
         else:
-            await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            Joelz = await message.reply_text(mo_tech_yt, reply_markup=InlineKeyboardMarkup(buttons))
+            await asyncio.sleep(900)
+            await Joelz.delete()
+            await message.delete()
             
     
 def get_size(size):
