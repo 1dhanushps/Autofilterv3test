@@ -36,5 +36,5 @@ ABOUT = """
 
 ➥ Library : Pyrogram Asyncio 1.13.0
 
-➥ Main Group : [Click Me](https://t.me/joinchat/plbm-ZM3VUdmM2Fl)
+➥ Main Group : [Click Me](https://t.me/+6_-NpstETUlkZThh)
 """
